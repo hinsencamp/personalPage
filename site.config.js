@@ -1,25 +1,31 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    name: "Fabian Hinsenkamp",
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "Senior Full Stack Engineer",
+    bio: "I am a engineer, course creator and indie hacker.",
+    // email: "fabian@hinsencamp.com",
+    linkedin: "fabianhinsenkamp",
+    github: "hinsencamp",
+    cal: "hinsencamp/15min",
+    twitter: "hinsencamp",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `SaaS: courseCrafts.ai`,
+      href: "https://coursecrafts.ai/",
+    },
+    {
+      name: `Course: System Design Bootcamp`,
+      href: "https://www.udemy.com/course/the-bigtech-system-design-interview-bootcamp/?referralCode=F15061BAF146EFB9F926",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
+    title: "hinsencamp",
+    description: "welcome to hinsencamp!",
   },
 
   // CONFIG configration (required)
@@ -52,7 +58,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "morethanmin/morethan-log",
+      repo: "hinsencamp/personalPage",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },

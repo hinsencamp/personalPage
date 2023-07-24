@@ -5,6 +5,8 @@ import {
   AiOutlineGithub,
   AiOutlineMail,
   AiFillLinkedin,
+  AiFillTwitterCircle,
+  AiOutlinePhone,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
 
@@ -13,6 +15,27 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
+        {CONFIG.profile.cal && (
+          <a
+            href={`https://cal.com/${CONFIG.profile.cal}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlinePhone className="icon" />
+            <div className="name">cal</div>
+          </a>
+        )}
+        {CONFIG.profile.twitter && (
+          <a
+            href={`https://https://twitter.com/${CONFIG.profile.twitter}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiFillTwitterCircle className="icon" />
+            <div className="name">twitter</div>
+          </a>
+        )}
+
         {CONFIG.profile.github && (
           <a
             href={`https://github.com/${CONFIG.profile.github}`}
@@ -33,6 +56,7 @@ const ContactCard: React.FC = () => {
             <div className="name">instagram</div>
           </a>
         )}
+
         {CONFIG.profile.email && (
           <a
             href={`mailto:${CONFIG.profile.email}`}
