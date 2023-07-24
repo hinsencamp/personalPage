@@ -10,6 +10,7 @@ const CONFIG = {
     github: "hinsencamp",
     cal: "hinsencamp/15min",
     twitter: "hinsencamp",
+    email: "",
     instagram: "",
   },
   projects: [
